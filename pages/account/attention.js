@@ -51,8 +51,13 @@ Page({
       title: '提示',
       content: '确定不再关注？',
       success: function(res) {
+        // 删除
         if (res.confirm === 1) {
-          // 删除
+          var arr = _this.data.attention;
+          arr.splice(idx, 1);
+          _this.setData({
+            attention: arr
+          });
         }
       }
     })

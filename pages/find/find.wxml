@@ -12,7 +12,7 @@
 
   <scroll-view scroll-y="true" class="find-content" lower-threshold="50" bindscrolltolower="scrollToLower">
     <block wx:for="{{findList}}">
-        <view class="find-list" data-idx="{{index}}">
+        <view class="find-list" data-idx="{{index}}" bindtap="showDetail">
             <image src="{{item.imgUrl}}" class="find-image" mode="aspectFill"></image>
             <view class="find-info">
               <view class="find-title">{{item.title}}</view>

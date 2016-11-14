@@ -39,10 +39,6 @@ Page({
   onUnload:function(){
     // 页面关闭
   },
-  showDetail: function(event) {
-    var id = event.currentTarget.dataset.idx;
-    console.log(id);
-  },
   chageFindData: function(event) {
     console.log(event);
     var type = event.currentTarget.dataset.type;
@@ -65,6 +61,14 @@ Page({
       showLoadMore: true,
       isMore: isMore,
       idx: this.data.idx+1
+    })
+  },
+  // 显示详情页信息
+  showDetail: function(e) {
+    console.log(e);
+    var idx = e.currentTarget.dataset.idx;
+    wx.navigateTo({
+      url: 'detail?idx='+idx
     })
   }
 });

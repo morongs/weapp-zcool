@@ -30,7 +30,7 @@ swiper {
 }
 .acticle-title {
   font-size: 32rpx;
-  margin-bottom: 35rpx;
+  margin-bottom: 30rpx;
 }
 .acticle-author {
   font-size: 28rpx;

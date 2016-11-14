@@ -4,6 +4,7 @@
     "pages/index/detail",
 
     "pages/find/find",
+    "pages/find/detail",
 
     "pages/account/account",
     "pages/account/account-info",

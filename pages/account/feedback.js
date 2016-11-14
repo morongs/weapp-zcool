@@ -12,7 +12,7 @@ Page({
     var textarea = event.detail.value.textarea;
     if (textarea && textarea !== '') {
       wx.showToast({
-        title: '感谢您的反馈，我们将继续努力完善产品',
+        title: '感谢您的反馈',
         icon: 'success'
       })
     } else {
